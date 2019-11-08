@@ -86,25 +86,31 @@ Note: where `make -j` is written, add a number roughly equal to the amount of CP
 **1)** Install most of the prerequisites and dependencies:
 
 Ubuntu Depencencies
+
     $ sudo apt-get install git cmake gcc g++ libboost-all-dev libicu-dev
 
 Fedora Dependencies
+
     $ sudo dnf install git cmake gcc gcc-c++ boost boost-devel libicu-devel
 
 **2a)** Either use an OCE package from your operating system's software repository
 
 Ubuntu Dependencies
+
     $ sudo apt-get install liboce-foundation-dev liboce-modeling-dev liboce-ocaf-dev liboce-visualization-dev liboce-ocaf-lite-dev
 
 Fedora Dependencies
+    
     $ sudo dnf install OCE-ocaf OCE-devel OCE-modeling OCE-foundation OCE-visualization OCE-draw
 
 **2b)** or (if not available, or the latest code is wanted) compile OCE yourself (note that the build takes a long time):
 
 Ubuntu Dependencies
+    
     $ sudo apt-get install libftgl-dev libtbb2 libtbb-dev libgl1-mesa-dev libfreetype6-dev
 
 Fedora Dependencies
+    
     $ sudo dnf install ftgl-devel tbb tbb-devel mesa-libGL-devel freetype-devel
 
 
@@ -120,9 +126,12 @@ Fedora Dependencies
 **3)** For building IfcConvert with COLLADA (.dae) support (on by default), OpenCOLLADA is needed:
 
 Dependencies for Ubuntu
+
     $ sudo apt-get install libpcre3-dev libxml2-dev
+
 Dependencies for Fedora
-    $ sudo dnf install  libxml2-devel
+    
+    $ sudo dnf install  libxml2-devel pcre2-devel
 
     $ git clone https://github.com/KhronosGroup/OpenCOLLADA.git
     $ cd OpenCOLLADA
@@ -136,8 +145,11 @@ Dependencies for Fedora
 **4)** For building the IfcPython wrapper (on by default), SWIG and Python development are needed, if not already available:
 
 Ubuntu
+    
     $ sudo apt-get install python-all-dev swig
+
 Fedora
+
     $ sudo dnf install python3-devel swig
 
 **5)** To build IfcOpenShell please take the following steps. Alternatively use environment variables for setting the
