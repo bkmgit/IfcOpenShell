@@ -77,9 +77,9 @@ or Clang 3.5 has been confirmed to work.
 
 ### Compiling on *nix
 
-The following instructions are for Ubuntu, modify as required for other operating systems. [nix/build-all.py] script
-can be experimented with and studied for pointers for other operating systems, but note that this script is not currently
-meant to be used for a typical IfcOpenShell workspace setup.
+The following instructions are for Ubuntu and Fedora, modify as required for other operating systems. [nix/build-all.py]
+script can be experimented with and studied for pointers for other operating systems, but note that this script is not 
+currently meant to be used for a typical IfcOpenShell workspace setup.
 
 Note: where `make -j` is written, add a number roughly equal to the amount of CPU cores + 1.
 
